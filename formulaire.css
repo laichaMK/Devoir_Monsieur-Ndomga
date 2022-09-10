@@ -1,0 +1,23 @@
+body{
+    margin-left: 20%;
+}
+.section1{
+    display: flex; 
+}
+.part2{
+    margin-top: 55px;
+    margin-left: 50px;
+}
+table , th, tr, td {
+    border: solid 1px black;
+    
+}
+.field{
+    display: flex;
+}
+button{
+color:  black;
+background-color: brown;
+border-radius: 10px;
+padding: 10px;
+}

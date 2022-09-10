@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../devoirDom/formulaire.css">
+</head>
+<body>
+    <section class="section1">
+
+        <fieldset class="field">
+            
+            <div class="part1">
+                <p>Enregistrer un etudiant</p>
+                <form action="GET">
+
+                    <label for="mat">matricule</label><br>  
+                    <input type="text" id="mat" name="mat"> <br><br>    
+
+                    <label for="nom">Nom</label> <br>
+                    <input type="text" id="nom" name="nom"> <br> <br>
+
+                    <label for="prenom">Prenom</label> <br>
+                    <input type="text" id="prenom" name="prenom"> <br> <br>
+
+                    <label for="date de naissance"> Date de Naissance</label> <br>
+                    <input type="date" id="date_naiss" name="date de naissance"> <br> <br>
+
+                    <label for="lieu de naissance">Lieu de Naissance</label> <br>
+                    <input type="text" id="lieu_naiss" name="lieu de naissance"> <br><br>
+
+                    <table >
+                        <thead>
+                            <th>Matieres</th>
+                            <th>Notes</th>
+                            <th>Actions</th>
+                        </thead>
+
+                        <tbody id="note-mat">
+                          
+                        </tbody> <br>        
+                    </table> <br>
+
+                    <button id="supprimer">Supprimer</button>
+                    
+                    <button id="bouton">Enregister</button>
+                </form>
+            </div>
+
+
+            <div class="part2">
+                <form action=" ">
+                    <label for="parcours">Parcours</label> <br>
+                    <input type="text" id="parcours" name="parcours"> <br><br>
+
+                    <label for="taille">Taille</label> <br>
+                    <input type="number" id="taille" name="taille"> <br> <br>
+
+                    <label for="poids">Poids</label> <br>
+                    <input type="number" id="poids" name="poids"> <br><br>
+
+                    <label for="Genre">Genre</label><br> 
+            
+                    <select name="" id="genre"> 
+                        <option value="Feminin">Femme</option>
+                        <option value="Masculin">Homme</option>
+                    </select> <br> <br>
+
+                    <label for="matieres">Matieres</label><br>
+                    <select name="matieres" id="matieres">
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="Bootstrap">Bootstrap</option>
+                        <option value="JavaScript">Javascript</option>
+                        <option value="DOM">DOM</option>
+                        <option value="PHP">PHP</option>
+                    </select>
+
+                    <label for="notes">Notes</label>
+                    <input type="number" id="notes" name="notes"> 
+
+                    <button type="submit" id="add">Ajouter</button>
+                </form>
+            </div>
+        </fieldset>
+
+    </section>
+
+<br> <br>
+        <input type="button" value="Nouveau" id="nouveau" value="supprimer">
+        <table  style="width: 750px">
+            <thead style="border:1px solid blue;">
+                <th>N <sup>o</sup></th>
+                <th>Noms et prenoms</th>
+                <th>Date_Naissannce</th>
+                <th>Lieu_naissance</th>
+                <th>Genre</th>
+                <th>Taille</th>
+                <th>Poids</th>
+                <th>Parcours</th>
+                <th>Action</th>
+            </thead> 
+            <tbody id='tab'>
+
+            </tbody >  
+        </table>
+
+        <div ></div>
+    </div>
+
+
+
+    
+   
+    <script src="./formulaire.js"></script>
+    
+</body>
+</html>
